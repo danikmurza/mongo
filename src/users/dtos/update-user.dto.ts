@@ -4,6 +4,10 @@ import {AddressEntry, OrdersEntry} from "./create-user.dto";
 
 export class UpdateUserDto {
 
+    @IsNotEmpty()
+    @IsString()
+    _id: string;
+
     @IsOptional()
     @IsString()
     @IsEmail()

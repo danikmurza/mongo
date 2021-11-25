@@ -59,7 +59,7 @@ export const AddressDataSchema = SchemaFactory.createForClass(AddressData);
 @Schema({ collection: 'USERS' })
 export class User {
 
-  @Prop({ required: true, lowercase: true, unique: true })
+  @Prop({ required: true, lowercase: true, unique: true,  })
   email: string;
 
   @Prop({ required: true })

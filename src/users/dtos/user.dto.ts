@@ -29,3 +29,11 @@ export class UserDto {
     orders:[] | OrdersEntry[];
 
 }
+
+
+export class UserDtoId {
+
+    @Expose()
+    readonly _id: string
+
+}
